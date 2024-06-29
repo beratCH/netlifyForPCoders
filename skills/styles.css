@@ -1,0 +1,148 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+  
+  /* NAVBAR */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 0 50px;
+    height: 80px;
+  }
+  
+  nav .left a {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+      
+
+  }
+  
+  nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+  }
+  
+  nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  
+  nav .right a span {
+    margin-left: 5px;
+  }
+
+  
+  /* SECTION 2: Skills */
+  .skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+  }
+  
+  .skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  .skills-section .text {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+  }
+  
+  .skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+  
+  .skills-section .cells .cell span {
+    font-size: 18px;
+  }
+
+footer {
+    background-color: #333; 
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .links {
+    margin: 0;
+}
+
+footer .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+footer .nav-links li {
+    margin: 0 15px;
+}
+
+footer .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer .nav-links a:hover {
+    color: #ff6347;
+}
